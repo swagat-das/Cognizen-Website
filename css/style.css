@@ -17,6 +17,59 @@ html {
   padding-left: 60px;
 }
 
+.rofl {
+font-family: 'Montserrat ', sans-serif;
+font-weight: 700;
+  }
+
+.rofl-lol {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.tm-home {
+  background: url('../images/home-bg.jpg') no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
+.tm-home-logo {
+	font-size: 64px;
+	color: #9C0;
+}
+.tm-home-header {
+  font-size: 36px;
+  font-style: normal;
+  text-transform: none;
+}
+.tm-home .btn {
+  background: none;
+  -webkit-box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
+          box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+  height: 60px;
+  margin-top: 60px;
+  padding: 20px 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+}
+.tm-home .btn:hover { background: #6495ed; }
+
+.butt {
+  color: black;
+}
+
+.butt:hover {
+  color: white;
+}
+
 
 /* Timeline */
 

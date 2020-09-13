@@ -175,7 +175,7 @@ NITR IMUN has started its journey in 2018 and witnessed two successful editions,
 
 <!-- Timeline -->
 
-<div class="wrapper" id="timeline">
+<div class="wrapper container" id="timeline">
 <section class="block">
   <div class="each-year">
     <div class="title">2012</div>
@@ -441,15 +441,18 @@ NITR IMUN has started its journey in 2018 and witnessed two successful editions,
 
     <div class="site-section subscribe bg-light">
       <div class="container">
-        <form action="#" class="row align-items-center">
+        <!-- form /// -->
+        <form action="/" method="POST" class="row align-items-center">
           <div class="col-md-5 mr-auto">
             <h2>BoTW Weekly Newsletter Subscribe</h2>
             <p>Want to stay updated with what's happening around you ? Do subscribe for this newsletter and get the newsletter every week on time.</p>
           </div>
           <div class="col-md-6 ml-auto">
-            <div class="d-flex">
-              <input type="email" class="form-control" placeholder="Enter your email">
+            <div  class="d-flex">
+             
+              <input type="email" name="email" class="form-control" placeholder="Enter your email">
               <button type="submit" class="btn btn-secondary" ><span class="icon-paper-plane"></span></button>
+            
             </div>
           </div>
         </form>
@@ -572,6 +575,10 @@ function check_for_fade() {
 
     });
 };
+
+$("#prospects_form").submit(function(e) {
+    e.preventDefault();
+});
 
 </script>
 

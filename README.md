@@ -1,6 +1,6 @@
 # Cognizen-Website
 
-Website of Cognizen - The Official Politics & Economics Club of NIT Rourkela
+Website of Cognizen - The Official Politics & Economics Club of NIT Rourkela.
 
 # Running on local system
 

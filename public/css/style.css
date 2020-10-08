@@ -249,6 +249,15 @@ font-weight: 700;
   font-weight: normal;
 }
 
+.ban-icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 /* CARDS */

@@ -6,6 +6,13 @@ html {
 
 /* SWAGAT */
 
+.link-hov {
+  color: rgb(73, 0, 0);
+}
+
+.link-hov :hover {
+color: #2a52be;
+}
 
 .nav-content {
   z-index: 1000;
@@ -249,6 +256,89 @@ font-weight: 700;
   font-weight: normal;
 }
 
+
+/* hero */
+
+/* #carousel .carousel-item.boat {
+  background-image: url("images/flex/MUN-19.JPG");
+}
+
+#carousel .carousel-item.sea {
+  background-image: url("images/flex/NU.jpg");
+}
+
+#carousel .carousel-item.river {
+  background-image: url("images/flex/IT.jpg");
+}
+
+#carousel .carousel-item.book {
+  background-image: url("images/flex/MUN-18.jpg");
+}
+
+#carousel .carousel-item {
+  height: 100vh;
+  width: 100%;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+#carousel .carousel-inner .carousel-item {
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+}
+
+#carousel .carousel-item .caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  color: white;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+
+#carousel .caption h2 {
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+
+#carousel .caption p {
+  animation-duration: 1s;
+  animation-delay: 2.2s;
+}
+
+#carousel .caption a {
+  animation-duration: 1s;
+  animation-delay: 2.4s;
+}
+
+.delicious-btn {
+  display: inline-block;
+  min-width: 160px;
+  height: 60px;
+  color: #fff;
+  border: none;
+  border-left: 3px solid #1c8314;
+  border-radius: 0;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 58px;
+  font-weight: 600;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-transform: capitalize;
+  background: #40ba37;
+}
+
+.delicious-btn:hover,
+.delicious-btn:active,
+.delicious-btn:focus {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #1c8314;
+  border-color: #40ba37
+} */
 
 
 /* CARDS */
@@ -1350,11 +1440,6 @@ h1, h2, h3, h4, h5,
   border-color: #000;
   color: #fff; }
 
-  .subscribe{
-    margin-top: 10rem;
-  }
-
-
 .subscribe form .form-control {
   margin-right: 10px;
   height: 50px;
@@ -1460,11 +1545,4 @@ h1, h2, h3, h4, h5,
   .landing-p {
     margin-top: 10px;
     font-size: 1.3rem;
-  }
-
-  /* stocks */
-
-  .stock{
-    width: 100%;
-    height: 30rem;
   }

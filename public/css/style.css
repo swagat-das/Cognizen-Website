@@ -1359,6 +1359,11 @@ h1, h2, h3, h4, h5,
   border-color: #000;
   color: #fff; }
 
+  .subscribe{
+    margin-top: 10rem;
+  }
+
+
 .subscribe form .form-control {
   margin-right: 10px;
   height: 50px;
@@ -1464,4 +1469,11 @@ h1, h2, h3, h4, h5,
   .landing-p {
     margin-top: 10px;
     font-size: 1.3rem;
+  }
+
+  /* stocks */
+
+  .stock{
+    width: 100%;
+    height: 30rem;
   }

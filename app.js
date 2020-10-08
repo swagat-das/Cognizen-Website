@@ -39,10 +39,6 @@ app.post("/", function(req, res) {
         } else {
             res.sendFile(__dirname + "/failure.html");
         }
-
-        // response.on("data", function(data) {
-        //     console.log(JSON.parse(data));
-        // })
     })
 
     request.write(jsonData);
@@ -60,7 +56,3 @@ app.listen(process.env.PORT || 3000, function() {
 
 });
 
-
-
-// List Id
-// 795304d114

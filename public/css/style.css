@@ -1,4 +1,27 @@
 /* Base */
+
+*{
+scroll-behavior: smooth !important;
+}
+*transition{
+  transition-duration: 1s;
+}
+.card-img-top{
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.initiatives{
+  font-size: 1.2rem;
+}
+.sm-handle{
+  margin: 5px;
+}
+
+#special-card{
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
 html {
   overflow-x: hidden; }
 
@@ -345,7 +368,8 @@ font-weight: 700;
 
 .card-style {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
+  border-radius: 30px;
+
 }
 .card-style:hover {
   transform: translateY(-5px) scale(1.010) translateZ(0);
@@ -1535,7 +1559,7 @@ h1, h2, h3, h4, h5,
   .landing-h1 {
     font-size: 2.3rem;
   }
-  
+
   .landing-h1,
   .landing-p {
     color: white;
@@ -1543,7 +1567,7 @@ h1, h2, h3, h4, h5,
     padding-right: 20px;
     text-align: center;
   }
-  
+
   .landing-p {
     margin-top: 10px;
     font-size: 1.3rem;

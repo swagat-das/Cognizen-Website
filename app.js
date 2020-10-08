@@ -1,5 +1,5 @@
 //jshint esversion:6
-
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
@@ -25,13 +25,12 @@ app.post("/", function(req, res) {
         }]
     }
     const jsonData = JSON.stringify(data);
-    const url = "https://us2.api.mailchimp.com/3.0/lists/795304d114";
+    const url = `https://us2.api.mailchimp.com/3.0/lists/${process.env.LIST_ID}`;
 
     const options = {
         method: "POST",
-        auth: "CognizenClubNITR:2a9fd1d75817bab29282931e871dcf7b-us2"
+        auth: `CognizenClubNITR:${process.env.API_KEY}`
     }
-
 
     const request = https.request(url, options, function(response) {
 
@@ -40,11 +39,6 @@ app.post("/", function(req, res) {
         } else {
             res.sendFile(__dirname + "/failure.html");
         }
-
-        response.on("data", function(data) {
-            console.log(JSON.parse(data));
-
-        })
     })
 
     request.write(jsonData);
@@ -62,7 +56,3 @@ app.listen(process.env.PORT || 3000, function() {
 
 });
 
-
-
-// List Id
-// 795304d114

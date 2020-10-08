@@ -241,8 +241,69 @@ NITR IMUN has started its journey in 2018 and witnessed two successful editions,
 
 
             <div class="section-title" id="initiatives">
-            <h1 class="caption d-block large" style="color: black; font-size: 32px; text-align: center;"> Club Initiatives </h1> <br>
+            <h1 class="caption d-block large" style="color: black; font-size: 32px; text-align: center;"> Club Initiatives </h1>
+
+              <br> <br> <br>  <div class="section-title">
+              <h2>News</h2>
               <br> <br>
+              <p>
+                News by News API
+              </p>
+              </div>
+
+              <br> <br>
+
+                 <div id="cardview" class="row row-cols-1 row-cols-md-2">
+
+                   <div class="col mb-4">
+                     <div class="card card-style">
+                       <img src="images/initiatives/img4.jpg" class="card-img-top" alt="...">
+                       <div class="card-body">
+                         <h5 class="card-title"></h5>
+                         <p class="card-text" ></p>
+                         <a href=""> <button type="button" class="btn btn-outline-light btn-lg">Read More</button> </a>
+                         </div>
+                     </div>
+                   </div>
+
+                   <div class="col mb-4">
+                     <div class="card card-style">
+                       <img src="images/initiatives/img3.jpg" class="card-img-top" alt="...">
+                       <div class="card-body">
+                         <h5 class="card-title"></h5>
+                         <p class="card-text" ></p>
+                         <a href=""> <button type="button" class="btn btn-outline-light btn-lg">Read More</button> </a>
+                         </div>
+                     </div>
+                   </div>
+
+                   <div class="col mb-4">
+                     <div class="card card-style">
+                       <img src="images/initiatives/img2.jpg" class="card-img-top" alt="...">
+                       <div class="card-body">
+                         <h5 class="card-title"></h5>
+                         <p class="card-text" ></p>
+                         <a href=""> <button type="button" class="btn btn-outline-light btn-lg">Read More</button> </a>
+                         </div>
+                     </div>
+                   </div>
+
+                   <div class="col mb-4">
+                     <div class="card card-style">
+                       <img src="images/initiatives/img1.jpg" class="card-img-top" alt="...">
+                       <div class="card-body">
+                         <h5 class="card-title"></h5>
+                         <p class="card-text" ></p>
+                         <a href=""><button type="button" class="btn btn-outline-light btn-lg">Read More</button></a>
+                         </div>
+                     </div>
+                   </div>
+
+
+                 </div>
+
+                 <br><br><br>
+
               <h2>BoTW</h2>
               <br> <br>
               <p>
@@ -411,65 +472,6 @@ NITR IMUN has started its journey in 2018 and witnessed two successful editions,
 
          </div>
 
-         <br> <br> <br>  <div class="section-title">
-         <h2>News</h2>
-         <br> <br>
-         <p>
-           News from News API
-         </p>
-       </div>
-
-      <br> <br>
-
-            <div id="cardview" class="row row-cols-1 row-cols-md-2" style="text-align:center;">
-
-
-              <div class="col mb-4">
-                <div class="card card-style">
-                  <img src="images/initiatives/img4.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"></p>
-                    <a href=""> <button type="button" class="btn btn-outline-light btn-lg">Read More</button> </a>
-                    </div>
-                </div>
-              </div>
-
-              <div class="col mb-4">
-                <div class="card card-style">
-                  <img src="images/initiatives/img3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"></p>
-                    <a href=""> <button type="button" class="btn btn-outline-light btn-lg">Read More</button> </a>
-                    </div>
-                </div>
-              </div>
-
-              <div class="col mb-4">
-                <div class="card card-style">
-                  <img src="images/initiatives/img2.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"></p>
-                    <a href=""> <button type="button" class="btn btn-outline-light btn-lg">Read More</button> </a>
-                    </div>
-                </div>
-              </div>
-
-              <div class="col mb-4">
-                <div class="card card-style">
-                  <img src="images/initiatives/img1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"></p>
-                    <br> <br> <a href=""> <button type="button" class="btn btn-outline-light btn-lg">Read More</button> </a>
-                    </div>
-                </div>
-              </div>
-
-
-            </div>
 
       </div>
     </div>
@@ -558,7 +560,7 @@ NITR IMUN has started its journey in 2018 and witnessed two successful editions,
   // Defining async function
   async function getapi(url) {
 
-  // Storing response
+  // Storing responsel
   const response = await fetch(url);
 
   // Storing data in form of JSON
@@ -570,22 +572,26 @@ NITR IMUN has started its journey in 2018 and witnessed two successful editions,
 getapi(api_url);
 var res;
 
-// Update UI
+// Function to define innerHTML for HTML table
 function show(data) {
     var card=document.getElementById("cardview");
+    card.style.height="auto";
     var children=card.children;
     console.log("children "+children[0]);
     var i=0;
     for(i=0;i<children.length;i++){
+      card.children[i].children[0].style.height="100%";
       console.log(i);
       card.children[i].children[0].children[0].src=data["data"][i]["imageUrl"];
       card.children[i].children[0].children[1].children[2].href=data["data"][i]["readMoreUrl"];
       card.children[i].children[0].children[1].children[0].innerHTML=data["data"][i]["title"];
       card.children[i].children[0].children[1].children[1].innerHTML=data["data"][i]["content"];
+      card.children[i].children[0].children[1].children[2].target="_blank";
+      card.children[i].children[0].children[1].style="display:flex; flex-direction:column; justify-content:space-between;"
     }
 
   }
-  </script>
+</script>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>

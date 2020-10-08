@@ -6,6 +6,13 @@ html {
 
 /* SWAGAT */
 
+.link-hov {
+  color: rgb(73, 0, 0);
+}
+
+.link-hov :hover {
+color: #2a52be;
+}
 
 .nav-content {
   z-index: 1000;

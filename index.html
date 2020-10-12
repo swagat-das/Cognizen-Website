@@ -620,11 +620,14 @@ And that's just the tip of the iceberg. With weekly discussion on some of the mo
   </section>
 
   <!-- NEWS API end -->
-
-  <br> <br>
+  
 
   <!-- TradingView Widget BEGIN -->
-  <div class="container">
+  
+  <div class="container " >
+    <div class="stock-area" >
+    <button type="button" id="stock-button" class="stock-button" onclick="myFunction()">Show Stock Data</button>
+    </div>
   <div class="stock" id="stock">
     <div class="section-title">
       <h2 id="init-head" style="color: black; font-size: 48px; text-align: center;">Stocks(BSE)</h2>
@@ -883,7 +886,20 @@ function show(data) {
 </script>
 
 <!-- Timeline js end -->
-
+<!-- Toggle stock graph -->
+<script>
+  function myFunction() {
+  var x = document.getElementById("stock");
+  var y = document.getElementById("stock-button");
+  if (x.style.display === "none"){
+    x.style.display = "block";
+    y.innerHTML="Hide Stock Data";
+  } else {
+    x.style.display = "none";
+    y.innerHTML="Show Stock Data";
+  }
+}
+</script>
 </body>
 
 </html>

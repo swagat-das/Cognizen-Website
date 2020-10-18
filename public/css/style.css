@@ -1604,14 +1604,14 @@ h1, h2, h3, h4, h5,
     display: block;
     text-align: center;
     cursor: pointer;
-    text-transform: uppercase;
     outline: none;
     overflow: hidden;
     position: relative;
     color: #fff;
     font-weight: 700;
-    font-size: 15px;
-    background-color: #025881;
+    font-size: 18px;
+    background-color: #000000;
+    border-radius: 16px;
     padding: 17px 60px;
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0,0,0,0.20);
@@ -1641,9 +1641,16 @@ h1, h2, h3, h4, h5,
   .stock-btn:hover:after {
     -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
+   
+
   }
   .stock-btn:hover{
     transform: scale(1.2);
+     text-transform: uppercase;
+     border-radius: 20px;
+     background-color: #fff;
+     color: #000000;
+     top: 2px;
   }
   
   .link {

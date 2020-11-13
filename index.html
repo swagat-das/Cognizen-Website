@@ -52,6 +52,30 @@
 <!-- custom- font- css -->
 
 <style type="text/css">
+@media only screen and (max-width: 600px) {
+  #botw_card {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+  }
+  #phil {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+  }
+  #wtpn_card {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+  }
+  #cardview {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+  }
+
+}
+
   
   h1,h2{
     font-family: 'Montserrat', sans-serif;
@@ -394,7 +418,7 @@ And that's just the tip of the iceberg. With weekly discussion on some of the mo
 
 <!-- BOTW -->
 
-  <div class="row row-cols-1 row-cols-md-2" style="text-align:centre;">
+  <div class="row row-cols-1 row-cols-md-2" style="text-align:centre;" id="botw_card">
     <div class="col mb-4">
       <div  data-aos="fade-up" class="card card-style">
         <img src="images/initiatives/1.jpg" class="card-img-top" id="special-card" alt="...">
@@ -448,7 +472,7 @@ And that's just the tip of the iceberg. With weekly discussion on some of the mo
      <br> <br>
 
 
-            <div class="row row-cols-1 row-cols-md-2" style="text-align:centre;">
+            <div class="row row-cols-1 row-cols-md-2" style="text-align:centre;" id="phil">
               <div class="col mb-4">
                 <div  data-aos="fade-up" class="card card-style">
                   <img src="images/initiatives/farmer.jpeg" class="card-img-top" alt="...">
@@ -503,7 +527,7 @@ And that's just the tip of the iceberg. With weekly discussion on some of the mo
 
          <br> <br>
 
-         <div  class="row row-cols-1 row-cols-md-2" style="text-align:center;">
+         <div  class="row row-cols-1 row-cols-md-2" style="text-align:center;" id="wtpn_card">
 
 
            <div class="col mb-4">
@@ -569,7 +593,7 @@ And that's just the tip of the iceberg. With weekly discussion on some of the mo
 
           <br> <br>
 
-             <div id="cardview" class="row row-cols-1 row-cols-md-2">
+             <div id="cardview" class="row row-cols-1 row-cols-md-2" >
 
                <div class="col mb-4">
                  <div data-aos="fade-up" class="card card-style">
@@ -758,7 +782,6 @@ And that's just the tip of the iceberg. With weekly discussion on some of the mo
   const response = await fetch(url);
 
   // Storing data in form of JSON
-  console.log(response);
   var data = await response.json();
   show(data);
 }
@@ -771,7 +794,6 @@ function show(data) {
     var card=document.getElementById("cardview");
     card.style.height="auto";
     var children=card.children;
-    console.log("children "+children[0]);
     var i=0;
     for(i=0;i<children.length;i++){
       card.children[i].children[0].style.height="100%";
@@ -899,9 +921,9 @@ function show(data) {
   function myFunction() {
   var x = document.getElementById("stock");
   var y = document.getElementById("stock-button");
-  if (x.style.display === "none"){
+  if ((x.style.display === "")||(x.style.display === "none")){
     x.style.display = "block";
-    y.innerHTML="Hide Stock Data";
+    y.innerHTML="Show Stock Data";
   } else {
     x.style.display = "none";
     y.innerHTML="Show Stock Data";

@@ -73,6 +73,30 @@
     padding-right: 5%;
     padding-top: 5%;
   }
+  #text_1 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+  }
+  #text_2 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+  }
+  #text_3 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+  }
+  #text_4 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+  }
+  #init-head {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
 }
 
@@ -406,10 +430,10 @@ And that's just the tip of the iceberg. With weekly discussion on some of the mo
 
             <h1 class="caption d-block large" style="color: black; font-size: 48px; text-align: center;"> Club Initiatives </h1> <br>
               <br> <br>
-              <a class="link-hov" href="https://drive.google.com/drive/folders/1G43Xuxoec5G22RjwrwiHBJVA6SB_ooio?usp=sharing"><h1 id="init-head" style="font-size: 32px;">BoTW</h1></a>
+              <a class="link-hov" href="https://drive.google.com/drive/folders/1G43Xuxoec5G22RjwrwiHBJVA6SB_ooio?usp=sharing"><h1 id="init-head" style="font-size: 32px;" class="int_head">BoTW</h1></a>
 
               <br> <br>
-              <p class="initiatives">
+              <p class="initiatives" id="text_1">
                 With everyone hustling throughout the day with myriad deadlines to meet, even flipping through the newspaper with a cup of coffee in hand seems like a dream. Missing out on important events all around the world can make one question one's relevance in this world. For those busy bees, Cognizen began the Best of This Week newsletter, a perfect compilation of all the globally important news articles collected throughout a week. Convenient, concise and piping hot just as you'd like that coffee!
               </p>
             </div>
@@ -460,9 +484,9 @@ And that's just the tip of the iceberg. With weekly discussion on some of the mo
   <!-- Philoneist -->
 
           <br> <br> <br>  <div class="section-title" >
-       <a class="link-hov" href="https://philoneistblog.wordpress.com/"><h1 id="init-head" style="font-size: 32px;">Philoneist</h1></a>
+       <a class="link-hov" href="https://philoneistblog.wordpress.com/"><h1 id="init-head" style="font-size: 32px;" class="int_head">Philoneist</h1></a>
         <br> <br>
-        <p class="initiatives">
+        <p class="initiatives" id="text_2">
          Being a club with an aim to foster the political and economic knowledge among the members, and rather all those whose lives we can touch, articles on the various issues become imperative for our cause. Presenting an analytical article, free from any prejudices or biases is something we always strive to achieve. Our blog page, 'Philoneist' has a collection of pioneering and incisive articles on topics that need actual attention in the sphere of polity and economy.
 
  With insightful write-ups and articles on burning issues of Indian and international importance, we are putting our best foot forward to make the youth aware and thus have made a niche for ourselves in the field.
@@ -518,9 +542,9 @@ And that's just the tip of the iceberg. With weekly discussion on some of the mo
 <!-- WTPN -->
 
             <br> <br> <br>  <div class="section-title">
-            <a class="link-hov" href="https://www.instagram.com/wethepeopleofnitr/"><h1 id="init-head" style="font-size: 32px;">WTPN</h1></a>
+            <a class="link-hov" href="https://www.instagram.com/wethepeopleofnitr/"><h1 id="init-head" style="font-size: 32px;" class="int_head">WTPN</h1></a>
             <br> <br>
-            <p class="initiatives">
+            <p class="initiatives" id="text_3">
               The memories we make in NITR better each of our expectations, and often last a lifetime. It's not the place, but the people who make this possible. "We the People of NITR" brings you the stories of these people who deserve to be recognised and appreciated. Here's to the ones who stay in the background, yet play a vital role in the reel of our memories!
             </p>
           </div>
@@ -584,15 +608,19 @@ And that's just the tip of the iceberg. With weekly discussion on some of the mo
 <br> <br>
 
          <div class="section-title" id="news">
-          <h2 id="init-head" style="color: black; font-size: 48px; text-align: center;">News</h2>
+          <h2 id="init-head" style="color: black; font-size: 48px; text-align: center;" class="int_head">News</h2>
           <br> <br>
-          <p class="initiatives">
+          <p class="initiatives" id="text_4">
             Check out the latest news from India and around the world. Latest India news on Politics, Business, Entertainment, Sports, Technology and Lifestyle.
           </p>
           </div>
 
           <br> <br>
-
+          <div class="stock-area" >
+            <button id="news-button" class="stock-btn" onclick="myFunction1()"><span>Show News</span></button>
+        </div>
+        <br> <br>
+        <div id="my-div">
              <div id="cardview" class="row row-cols-1 row-cols-md-2" >
 
                <div class="col mb-4">
@@ -638,6 +666,7 @@ And that's just the tip of the iceberg. With weekly discussion on some of the mo
                      </div>
                  </div>
                </div>
+               </div>
 
 
              </div>
@@ -661,7 +690,7 @@ And that's just the tip of the iceberg. With weekly discussion on some of the mo
     </div>
   <div class="stock" id="stock">
     <div class="section-title">
-      <h2 id="init-head" style="color: black; font-size: 48px; text-align: center;">Stocks(BSE)</h2>
+      <h2 id="init-head" style="color: black; font-size: 48px; text-align: center;" class="int_head">Stocks(BSE)</h2>
       <br> <br>
     </div>
   <div class="tradingview-widget-container ">
@@ -753,9 +782,16 @@ And that's just the tip of the iceberg. With weekly discussion on some of the mo
             <div class="copyright">
                 <p>
                     Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. <br>
-                    This template is made with <i class="icon-heart text-danger" aria-hidden="true" style="margin-right: 5px;"></i>by Colorlib.
                     </p>
+
             </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h3 class="foot-head">Contributors</h3>
+            <p>Harsh Bhudolia</p>
+            <p>Swagat Subhakanta Das</p>
+            <p>Sweta Dash</p>
+            <p>Anshuman Sandhibigraha</p>
           </div>
         </div>
       </div>
@@ -923,10 +959,21 @@ function show(data) {
   var y = document.getElementById("stock-button");
   if ((x.style.display === "")||(x.style.display === "none")){
     x.style.display = "block";
-    y.innerHTML="Show Stock Data";
+    y.innerHTML="Hide Stock Data";
   } else {
     x.style.display = "none";
     y.innerHTML="Show Stock Data";
+  }
+}
+function myFunction1() {
+  var x = document.getElementById("my-div");
+  var y = document.getElementById("news-button");
+  if ((x.style.display === "")||(x.style.display === "none")) {
+    x.style.display = "block";
+    y.innerHTML="Hide News";
+  } else {
+    x.style.display = "none";
+    y.innerHTML="Show News";
   }
 }
 </script>
